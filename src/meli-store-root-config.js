@@ -22,6 +22,12 @@ const applications = constructApplications({
 });
 const layoutEngine = constructLayoutEngine({ routes, applications });
 
+registerApplication({
+  name: "@meli-store/mf-header",
+  app: () => System.import("@meli-store/mf-header"),
+  activeWhen: [(location) => (location.pathname != "/login")],
+});
+
 applications.forEach(registerApplication);
 layoutEngine.activate();
 start();
