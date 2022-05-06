@@ -60,6 +60,21 @@
       }
     }
   </script>
+  <% } else { %>
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
+          "@meli-store/root-config": "https://meli-store.github.io/root-config/meli-store-root-config.js",
+          "@meli-store/mf-header": "https://meli-store.github.io/mf-header/meli-store-mf-header.js",
+          "@meli-store/mf-products":"https://meli-store.github.io/mf-products/meli-store-mf-products.js",
+          "@meli-store/mf-shopping-car":"https://meli-store.github.io/mf-shopping-car/meli-store-mf-shopping-car.js",
+          "@meli-store/mf-history": "https://meli-store.github.io/mf-history/meli-store-mf-history.js",
+          "@meli-store/mf-login": "https://meli-store.github.io/mf-login/meli-store-mf-login.js",
+          "@meli-store/api": "https://meli-store.github.io/api/meli-store-api.js"
+        }
+      }
+    </script>
   <% } %>
 
   <!--
